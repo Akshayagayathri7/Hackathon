@@ -1,11 +1,15 @@
 <template>
-  <div class="home">
-    <HomePage :msg="this.$t('message')" />
-    <!-- <v-btn
+  <div>
+    <HomePage />
+    <div class="align-center">
+    <v-btn
+      @click="goToSelection"
       depressed
       color="primary"
-      @click="goToSelection"
-    > -->
+    >
+      Proceed To Opt for RM
+    </v-btn>
+    </div>
   </div>
 </template>
 
@@ -18,10 +22,15 @@ export default {
   components: {
     HomePage,
   },
-  // methods: {
-  //   goToSelection() {
-  //     this.router.push('/views/content');
-  //   }
-  // }
+  methods: {
+    goToSelection() {
+      this.$router.push({name: 'Content'});
+    }
+  }
 };
 </script>
+<style scoped>
+.align-center {
+  text-align: center;
+}
+</style>

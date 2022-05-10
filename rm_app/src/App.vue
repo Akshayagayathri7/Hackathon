@@ -1,9 +1,11 @@
 <template>
-  <v-main>
+  <v-app>
     <AppHeader />
+    <div class="layout">
     <router-view />
+    </div>
     <AppFooter />
-  </v-main>
+  </v-app>
 </template>
 
 <script>
@@ -18,3 +20,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.layout {
+  margin: 16px;
+}
+</style>
