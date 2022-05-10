@@ -1,7 +1,11 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HomePage msg="Welcome to Your Vue.js App" />
+    <HomePage :msg="this.$t('message')" />
+    <!-- <v-btn
+      depressed
+      color="primary"
+      @click="goToSelection"
+    > -->
   </div>
 </template>
 
@@ -14,5 +18,10 @@ export default {
   components: {
     HomePage,
   },
+  // methods: {
+  //   goToSelection() {
+  //     this.router.push('/views/content');
+  //   }
+  // }
 };
 </script>
