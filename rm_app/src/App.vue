@@ -23,5 +23,6 @@ export default {
 <style scoped>
 .layout {
   margin: 16px;
+  display: block;
 }
 </style>

@@ -2,7 +2,6 @@
   <v-footer
     color="primary lighten-1"
     padless
-    absolute
   >
     <v-row
       justify="center"
@@ -32,9 +31,11 @@
     }),
     methods: {
       changeLanguage(event) {
-        if (event.target.textContent === 'NL') {
+        if (event.srcElement.innerText === 'NL') {
           this.$i18n.locale = 'nl';
+          return;
         }
+        this.$i18n.locale = 'en';
       }
     }
   }

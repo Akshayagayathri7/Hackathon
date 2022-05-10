@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>{{$t('home_content')}}</div>
+    <div class="align-content">{{$t('home_content')}}</div>
     <v-img
       :src="require('../assets/Relationship_Manager.png')"
       class="my-3"
@@ -13,8 +13,16 @@
 <script>
 export default {
   name: "Home",
+  data: () => ({
+  })
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+.align-content {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+</style>
