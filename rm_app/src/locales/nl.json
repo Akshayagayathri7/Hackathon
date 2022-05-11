@@ -6,28 +6,27 @@
         {
         "name": "Persoonlijke lening",
         "value": "1",
-        "Description": "hlo evng"
+        "description": "hlo evng",
+        "img": "personal_loan"
+        
       },
         {"name":"Vastgoedlening",
         "value": "2",
-        "Description": "hlo evng" 
+        "description": "hlo evng",
+        "img": "home_loan"
         },
           {"name":"Gouden lening",
             "value": "3",
-            "Description": "hlo evng" 
+            "description": "hlo evng",
+            "img": "gold_loan" 
         },
         {"name":"anderen",
           "value": "4",
-          "Description": "hlo evng" 
+          "description": "hlo evng",
+          "img": "other_services"
       }
       ],
       "duration": [
-        {
-        "name": "15days"
-      },
-        {"name":"1 month"
-        },
-        {"name":"3 months"
-        }
+        "15 days", "1 month", "3 months"
       ]
 }

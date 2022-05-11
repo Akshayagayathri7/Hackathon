@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>This is an acknowledgement page</h1>
+    <h1>Thanks For Opting for Relationship Manager</h1>
   </div>
 </template>

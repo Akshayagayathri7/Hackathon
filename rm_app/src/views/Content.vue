@@ -1,10 +1,10 @@
 <template>
-  <div class="about">
+  <div>
     <v-row justify="center">
       <v-select
         :items="$t('items')"
         item-text="name"
-        label="Select a Service"
+        label="Select"
         solo
         return-object
         full-width
@@ -13,6 +13,17 @@
     </v-row>
     <v-card v-if="status" class="mx-auto" max-width>
       <v-list-item three-line>
+        <v-list-item-avatar
+          tile
+          size="300"
+        >
+      <v-img
+          class="white--text align-end"
+          height="300px"
+          :src="require(`../assets/${this.img}.jpg`)"
+        />
+
+        </v-list-item-avatar>
         <v-list-item-content>
           <div class="text-h5 mb-4">{{ $t("card_description") }}</div>
           <v-list-item-subtitle>
@@ -26,12 +37,9 @@
               :value="durations"
             ></v-radio>
           </v-radio-group>
+          <v-btn outlined rounded text> {{ $t("button") }} </v-btn>
         </v-list-item-content>
       </v-list-item>
-
-      <v-card-actions>
-        <v-btn outlined rounded text> {{ $t("button") }} </v-btn>
-      </v-card-actions>
     </v-card>
   </div>
 </template>
@@ -41,11 +49,13 @@ export default {
     radioGroup: 1,
     status: false,
     selectedLoan: '',
+    img:'',
   }),
   methods: {
     onChangePage(a) {
       this.status = true
-      this.selectedLoan = a.value
+      this.selectedLoan = a.value;
+      this.img = this.$t(`items[${this.selectedLoan}].img`);
     },
   },
 };

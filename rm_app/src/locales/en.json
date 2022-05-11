@@ -7,19 +7,23 @@
     {
     "name": "Personal Loan",
     "value": 0,
-    "description": "Personal loans are loans that can cover a number of personal expenses\nYou can find personal loans through banks, credit unions, and online lenders.\nPersonal loans can be secured, meaning you need collateral to borrow money, or unsecured, with no collateral needed.\nPersonal loans can vary greatly when it comes to their interest rates, fees, amounts, and repayment terms"
+    "description": "Personal loans are loans that can cover a number of personal expenses\nYou can find personal loans through banks, credit unions, and online lenders.\nPersonal loans can be secured, meaning you need collateral to borrow money, or unsecured, with no collateral needed.\nPersonal loans can vary greatly when it comes to their interest rates, fees, amounts, and repayment terms",
+    "img": "personal_loan"
   },
     {"name":"Property Loan",
     "value": 1,
-    "description": "swetha" 
+    "description": "swetha",
+    "img": "home_loan"
     },
     {"name":"Gold Loan",
       "value": 2,
-      "description": "A Gold loan or loan against gold is a secured credit facility extended by banks and financial institutions, letting you pledge your gold jewellery or ornaments in exchange for funds. Instant Loan Across the Table: You get access to funds, instantly." 
+      "description": "A Gold loan or loan against gold is a secured credit facility extended by banks and financial institutions, letting you pledge your gold jewellery or ornaments in exchange for funds. Instant Loan Across the Table: You get access to funds, instantly.",
+      "img": "gold_loan"
     },
     {"name":"Others",
       "value": 3,
-      "description": "hlo evng" 
+      "description": "hlo evng",
+      "img": "other_services"
   }
   ],
   "duration": [
