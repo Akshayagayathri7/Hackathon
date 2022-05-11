@@ -3,6 +3,7 @@
   "home_content": "We are committed to your needs. Through this relationships manager we engage, understand and address your essential in just a phone call away.  Contact us for best set of solution.",
   "card_description": "Description",
   "button": "Proceed",
+  "placeholder": "Select a Service",
   "items": [
     {
     "name": "Personal Loan",
@@ -11,7 +12,7 @@
   },
     {"name":"Property Loan",
     "value": 1,
-    "description": "swetha" 
+    "description": "any money borrowed from (A) a bank, financial institution, hedge fund, pension fund, or insurance company or (B) any other entity having as its principal business the lending of money and/or investing in loans, in each case other than public or quasi-public entities or international organisations with a public or quasi-public character" 
     },
     {"name":"Gold Loan",
       "value": 2,
