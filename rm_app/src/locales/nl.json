@@ -1,4 +1,33 @@
 {
     "message": "haha",
-    "home_content": "HELLO"
+    "home_content": "HELLO",
+    "card_description": "Description",
+    "items": [
+        {
+        "name": "Persoonlijke lening",
+        "value": "1",
+        "Description": "hlo evng"
+      },
+        {"name":"Vastgoedlening",
+        "value": "2",
+        "Description": "hlo evng" 
+        },
+          {"name":"Gouden lening",
+            "value": "3",
+            "Description": "hlo evng" 
+        },
+        {"name":"anderen",
+          "value": "4",
+          "Description": "hlo evng" 
+      }
+      ],
+      "duration": [
+        {
+        "name": "15days"
+      },
+        {"name":"1 month"
+        },
+        {"name":"3 months"
+        }
+      ]
 }
