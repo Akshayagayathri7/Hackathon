@@ -24,19 +24,44 @@
           <p >
             {{ $t(`items[${this.selectedLoan.value}].description`) }}
           </p>
-          <v-radio-group v-model="radioGroup" mandatory>
+          <v-radio-group v-model="radioGroup">
             <v-radio
-              v-for="durations in $t('duration')"
-              :key="durations"
-              :label="durations"
-              :value="durations"
+              v-for="(durations, index) in $t('duration')"
+              :key="index"
+              :label="durations.value"
+              :value="durations.key"
+              @click="dialog = true"
             ></v-radio>
-          </v-radio-group>
+          </v-radio-group>          
+          <v-dialog
+            v-model="dialog"
+            max-width="290"
+          >
+            <v-card>
+              <v-card-title class="text-h5">
+                {{$t(`cost[${this.radioGroup-1}].amount`)}}
+              </v-card-title>
+              <v-card-text>
+                {{$t(`cost[${this.radioGroup-1}].text`)}}
+              </v-card-text>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  color="green darken-1"
+                  text
+                  @click="dialog = false"
+                >
+                  OK
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
         </div>
       </v-row>
         <div class="text-align-center">
           <v-btn
             depressed
+            :disabled="!radioGroup"
             color="primary"
             @click="goToSummary"
           >{{ $t("button_submit") }}
@@ -48,10 +73,11 @@
 <script>
 export default {
   data: () => ({
-    radioGroup: 1,
+    radioGroup: null,
     status: false,
     selectedLoan: '',
     img:'',
+    dialog: false,
   }),
   
   methods: {
@@ -62,7 +88,7 @@ export default {
     },
     goToSummary() {
       this.$router.push({name: 'Acknowledgement'});
-    }
+    },
   },
 };
 </script>

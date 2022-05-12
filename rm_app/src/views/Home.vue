@@ -6,7 +6,8 @@
       @click="goToSelection"
       depressed
       color="primary"
-    >{{$t('button_proceed')}}
+    >
+    {{ $t("home_button") }}
     </v-btn>
     </div>
   </div>
