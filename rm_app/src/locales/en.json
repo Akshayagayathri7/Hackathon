@@ -4,8 +4,10 @@
   "home_content": "Perfect place to fulfill your banking and investment requirements. We have dedicated relationship managers, who can resolve your inhibitions and show you an ideal way to cater your needs. We come up with the best and the most affordable prices for the service we provide. Get in touch with us anytime and any day to learn more about our services.",
   "card_description": "Description",
   "button_proceed": "Proceed",
+  "home_button": "Proceed To Opt for RM",
   "button_submit": "Submit",
   "placeholder": "Select a Service",
+  "thankyou_text": " THANK YOU You’re done!! Your message has been recieved and we will becontacting you shortly.",
   "items":
     [
       {

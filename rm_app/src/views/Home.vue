@@ -7,7 +7,7 @@
       depressed
       color="primary"
     >
-      Proceed To Opt for RM
+    {{ $t("home_button") }}
     </v-btn>
     </div>
   </div>
