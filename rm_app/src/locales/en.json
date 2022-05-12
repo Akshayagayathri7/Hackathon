@@ -1,8 +1,10 @@
 {
   "message": "hello i18n !!",
-  "home_content": "We are committed to your needs. Through this relationships manager we engage, understand and address your essential in just a phone call away.  Contact us for best set of solution.",
+  "app_title": "Relationship Manager",
+  "home_content": "Perfect place to fulfill your banking and investment requirements. We have dedicated relationship managers, who can resolve your inhibitions and show you an ideal way to cater your needs. We come up with the best and the most affordable prices for the service we provide. Get in touch with us anytime and any day to learn more about our services.",
   "card_description": "Description",
-  "button": "Proceed",
+  "button_proceed": "Proceed",
+  "button_submit": "Submit",
   "placeholder": "Select a Service",
   "items":
     [

@@ -1,7 +1,10 @@
 {
   "message": "haha",
+  "app_title": "Relationship Manager",
   "home_content": "HELLO",
   "card_description": "Beschrijving",
+  "button_proceed": "Proceed..",
+  "button_submit": "Submit...",
   "placeholder":"Selecteer een dienst",
   "items":
     [

@@ -6,6 +6,7 @@
       item-text="name"
       :label="$t('placeholder')"
       :v-model="$t(`items[${this.selectedLoan.name}]`)"
+      item-color="primary"
       solo
       return-object
       full-width
@@ -23,7 +24,7 @@
           <p >
             {{ $t(`items[${this.selectedLoan.value}].description`) }}
           </p>
-          <v-radio-group v-model="radioGroup">
+          <v-radio-group v-model="radioGroup" mandatory>
             <v-radio
               v-for="durations in $t('duration')"
               :key="durations"
@@ -33,17 +34,14 @@
           </v-radio-group>
         </div>
       </v-row>
-      <v-row>
-        <div>
+        <div class="text-align-center">
           <v-btn
-            outlined
-            rounded
-            text
+            depressed
+            color="primary"
             @click="goToSummary"
-          >{{ $t("button") }}
+          >{{ $t("button_submit") }}
           </v-btn>
         </div>
-      </v-row>
     </v-container>
   </div>
 </template>
@@ -69,4 +67,7 @@ export default {
 };
 </script>
 <style scoped>
+.text-align-center{
+  text-align: center;
+}
 </style>
