@@ -3,30 +3,37 @@
   "home_content": "We are committed to your needs. Through this relationships manager we engage, understand and address your essential in just a phone call away.  Contact us for best set of solution.",
   "card_description": "Description",
   "button": "Proceed",
-  "items": [
-    {
-    "name": "Personal Loan",
-    "value": 0,
-    "description": "Personal loans are loans that can cover a number of personal expenses\nYou can find personal loans through banks, credit unions, and online lenders.\nPersonal loans can be secured, meaning you need collateral to borrow money, or unsecured, with no collateral needed.\nPersonal loans can vary greatly when it comes to their interest rates, fees, amounts, and repayment terms",
-    "img": "personal_loan"
-  },
-    {"name":"Property Loan",
-    "value": 1,
-    "description": "swetha",
-    "img": "home_loan"
-    },
-    {"name":"Gold Loan",
-      "value": 2,
-      "description": "A Gold loan or loan against gold is a secured credit facility extended by banks and financial institutions, letting you pledge your gold jewellery or ornaments in exchange for funds. Instant Loan Across the Table: You get access to funds, instantly.",
-      "img": "gold_loan"
-    },
-    {"name":"Others",
-      "value": 3,
-      "description": "hlo evng",
-      "img": "other_services"
-  }
-  ],
-  "duration": [
-    "15 days", "1 month", "3 months"
-  ] 
+  "placeholder": "Select a Service",
+  "items":
+    [
+      {
+        "name": "Personal Loan",
+        "value": 0,
+        "description": "Personal loans are loans that can cover a number of personal expenses\nYou can find personal loans through banks, credit unions, and online lenders.\nPersonal loans can be secured, meaning you need collateral to borrow money, or unsecured, with no collateral needed.\nPersonal loans can vary greatly when it comes to their interest rates, fees, amounts, and repayment terms",
+        "img": "personal_loan"
+      },
+      {
+        "name":"Property Loan",
+        "value": 1,
+        "description": "any money borrowed from (A) a bank, financial institution, hedge fund, pension fund, or insurance company or (B) any other entity having as its principal business the lending of money and/or investing in loans, in each case other than public or quasi-public entities or international organisations with a public or quasi-public character",
+        "img": "home_loan"
+      },
+      {
+        "name":"Gold Loan",
+        "value": 2,
+        "description": "A Gold loan or loan against gold is a secured credit facility extended by banks and financial institutions, letting you pledge your gold jewellery or ornaments in exchange for funds. Instant Loan Across the Table: You get access to funds, instantly.",
+        "img": "gold_loan"
+      },
+      {
+        "name":"Others",
+        "value": 3,
+        "description": "hlo evng",
+        "img": "other_services"
+      }
+    ],
+  "duration":
+    [
+      "15 days", "1 month", "3 months"
+    ],
+  "label": "Please select a service to view details"
 }

@@ -1,32 +1,38 @@
 {
-    "message": "haha",
-    "home_content": "HELLO",
-    "card_description": "Description",
-    "items": [
-        {
+  "message": "haha",
+  "home_content": "HELLO",
+  "card_description": "Beschrijving",
+  "placeholder":"Selecteer een dienst",
+  "items":
+    [
+      {
         "name": "Persoonlijke lening",
-        "value": "1",
+        "value": 0,
         "description": "hlo evng",
         "img": "personal_loan"
-        
       },
-        {"name":"Vastgoedlening",
-        "value": "2",
+      {
+        "name":"Vastgoedlening",
+        "value": 1,
         "description": "hlo evng",
         "img": "home_loan"
-        },
-          {"name":"Gouden lening",
-            "value": "3",
-            "description": "hlo evng",
-            "img": "gold_loan" 
-        },
-        {"name":"anderen",
-          "value": "4",
-          "description": "hlo evng",
-          "img": "other_services"
+      },
+      {
+        "name":"Gouden lening",
+        "value": 2,
+        "description": "hlo evng",
+        "img": "gold_loan" 
+      },
+      {
+        "name":"anderen",
+        "value": 3,
+        "description": "hlo evng",
+        "img": "other_services"
       }
-      ],
-      "duration": [
-        "15 days", "1 month", "3 months"
-      ]
+    ],
+  "duration":
+    [
+      "15 hrs", "1 month", "3 months"
+    ],
+  "label": "Please select a service to view..."
 }
