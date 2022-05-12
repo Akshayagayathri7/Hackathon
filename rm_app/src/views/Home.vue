@@ -6,8 +6,7 @@
       @click="goToSelection"
       depressed
       color="primary"
-    >
-      Proceed To Opt for RM
+    >{{$t('button_proceed')}}
     </v-btn>
     </div>
   </div>
