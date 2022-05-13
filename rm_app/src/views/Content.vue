@@ -1,106 +1,78 @@
 <template>
-  <div class="col-12">
-    <div class="mb-4"><label>{{$t('label')}}</label></div>
-    <v-select
-      :items="$t('items')"
-      item-text="name"
-      :label="$t('placeholder')"
-      :v-model="$t(`items[${this.selectedLoan.name}]`)"
-      item-color="purple"
-      solo
-      return-object
-      full-width
-      @change="onChangePage"
-    ></v-select>
-    <v-container v-if="status">
-      <v-row>
-        <div class="col-md-6 sm-12 align-self-center">
-          <v-img
-            :src="require(`../assets/${img}.jpg`)"
-          />
-        </div>
-        <div class="col-md-6 sm-12">
-          <h1 class="mb-4 font-title">{{ $t("card_description") }}</h1>
-          <p >
-            {{ $t(`items[${this.selectedLoan.value}].description`) }}
-          </p>
-          <v-radio-group v-model="radioGroup">
-            <v-radio
-              v-for="(durations, index) in $t('duration')"
-              :key="index"
-              :label="durations.value"
-              :value="durations.key"
-              @click="dialog = true"
-              color="purple"
-            ></v-radio>
-          </v-radio-group>          
-          <v-dialog
-            v-model="dialog"
-            max-width="290"
+<v-row>
+<v-container fluid grid-list-md>
+  <v-layout row wrap>
+  <v-flex v-for="i in 3" :key="i">
+  <v-hover v-slot="{ hover }">
+    <v-card
+      class="mx-auto"
+      color="grey lighten-4"
+      max-width="600"
+    >
+      <v-img
+        :aspect-ratio="16/9"
+        src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
+      >
+        <v-expand-transition>
+          <div
+            v-if="hover"
+            class="d-flex transition-fast-in-fast-out purple lighten-2 v-card--reveal text-h2 white--text"
+            style="height: 100%;"
           >
-            <v-card>
-              <v-card-title class="text-h5">
-                {{$t(`cost[${this.radioGroup-1}].amount`)}}
-              </v-card-title>
-              <v-card-text>
-                {{$t(`cost[${this.radioGroup-1}].text`)}}
-              </v-card-text>
-              <v-card-actions>
-                <v-spacer></v-spacer>
-                <v-btn
-                  color="purple lighten-3"
-                  text
-                  @click="dialog = false"
-                >
-                  OK
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-dialog>
+            <ol><li v-for="item in $t(`card_content[${i-1}].services_offered`)" :key="item">
+              {{item}}</li></ol>
+          </div>
+        </v-expand-transition>
+      </v-img>
+      <v-card-text
+        class="pt-6"
+        style="position: relative;"
+      >
+        <v-btn
+          absolute
+          color="purple"
+          class="white--text"
+          large
+          right
+          top
+          @click="proceed(i)"
+        >Proceed
+        </v-btn>
+        <div class="font-weight-light grey--text text-h6 mb-2">
+          {{$t(`card_content[${i-1}].title`)}}
         </div>
-      </v-row>
-      <br />
-        <div class="text-align-center">
-          <v-btn
-            depressed
-            :disabled="!radioGroup"
-            color="purple lighten-3"
-            @click="goToSummary"
-          >{{ $t("button_submit") }}
-          </v-btn>
+        <h3 class="text-h4 font-weight-light orange--text mb-2">
+          {{$t('amount')}}: {{$t(`card_content[${i-1}].cost`)}} <span>&#8364;</span>
+        </h3>
+        <div class="font-weight-light text-h6 mb-2">
+          {{$t('services')}}: {{$t(`card_content[${i-1}].services`)}}
         </div>
-    </v-container>
-  </div>
+      </v-card-text>
+    </v-card>
+  </v-hover>
+  </v-flex>
+  </v-layout>
+</v-container>
+</v-row>
 </template>
 <script>
 export default {
-  data: () => ({
-    radioGroup: null,
-    status: false,
-    selectedLoan: '',
-    img:'',
-    dialog: false,
-  }),
-  
-  methods: {
-    onChangePage(a) {
-      this.status = true
-      this.selectedLoan = a;
-      this.img = this.$t(`items[${this.selectedLoan.value}].img`);
-    },
-    goToSummary() {
+  methods:{
+    proceed(i) {
+      this.$store.commit('updateSelectedItem', i);
+      console.log(this.$store.state.selectedItem);
       this.$router.push({name: 'Acknowledgement'});
-    },
-  },
-};
-</script>
-<style scoped>
-.text-align-center{
-  text-align: center;
+    }
+  }
 }
-.font-title {
-  font-size: 24px;
-  color:purple;
-  font-style: italic;
-};
+</script>
+<style>
+.v-card--reveal {
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+}
 </style>

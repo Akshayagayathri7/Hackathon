@@ -36,21 +36,32 @@
         "img": "other_services"
       }
     ],
-  "duration":
-    [
-      {
-        "key": 1,
-        "value": "15 dagen"
-      },
-      {
-        "key": 2,
-        "value": "1 maand"
-      },
-      {
-        "key": 3,
-        "value": "3 maanden"
-      }
-    ],
+    "card_content":
+      [
+        {
+          "key": 1,
+          "title": "15 days",
+          "services": "3",
+          "cost": "20",
+          "services_offered": ["credit", "debit", "check payments"]
+        },
+        {
+          "key": 2,
+          "title": "1 month",
+          "services": "6",
+          "cost": "30",
+          "services_offered": ["home_loan", "personal_loan", "education_loan", "gol_loan"]
+        },
+        {
+          "key": 3,
+          "title": "3 months",
+          "services": "10",
+          "cost": "40",
+          "services_offered": ["Advancements of loan", "Investments"]
+        }
+      ],
+  "amount": "Cost of the service",
+  "services": "Number of services offered",
   "cost":
     [
       {
