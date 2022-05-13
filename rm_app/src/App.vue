@@ -1,9 +1,16 @@
 <template>
   <v-app>
     <AppHeader />
-    <div class="layout">
-    <router-view />
-    </div>
+      <div class="layout">
+      <router-view />
+      </div>
+      <div>
+    <v-img
+      :src="require('./assets/logo.png')"
+      class="my-3"
+      contain
+      height="100"
+    /></div>
     <AppFooter />
   </v-app>
 </template>
@@ -11,6 +18,7 @@
 <script>
 import AppFooter from "@/components/AppFooter.vue";
 import AppHeader from "@/components/AppHeader.vue";
+
 
 export default {
   name: "App",
@@ -24,5 +32,10 @@ export default {
 .layout {
   margin: 16px;
   display: block;
+}
+.hero {
+  background: url('./assets/background_home.jpg');
+  background-size: cover;
+  height: 100vh;
 }
 </style>
