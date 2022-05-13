@@ -1,11 +1,14 @@
 <template>
-  <div>
-    <HomePage />
+  <div class="align-self-center">
+    <HomePage/>
+    <br />
+    <br />
+    <br />
     <div class="align-center">
     <v-btn
       @click="goToSelection"
       depressed
-      color="primary"
+      color="purple lighten-3"
     >
     {{ $t("home_button") }}
     </v-btn>
