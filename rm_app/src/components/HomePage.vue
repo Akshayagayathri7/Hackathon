@@ -1,12 +1,18 @@
 <template>
-  <div>
-    <div class="align-content">{{$t('home_content')}}</div>
-    <v-img
+  <div class="align-self-center">
+    <v-row>
+    <!-- <div clss="col-md-6 sm-12 align-self-center">
+      
+    </div>
+    <div class="col-md-6 sm-12">{{$t('home_content')}}</div> -->
+    <div class="col-md-6 align-self-center">
+      <v-img
       :src="require('../assets/Relationship_Manager.png')"
-      class="my-3"
       contain
       height="200"
-    />
+    />.</div>
+    <div class="col-md-6">{{$t('home_content')}}</div>
+    </v-row>
   </div>
 </template>
 
@@ -24,5 +30,8 @@ export default {
   text-align: center;
   font-weight: 500;
   font-size: 24px;
+};
+.align-self-center {
+  align-self: center;
 }
 </style>

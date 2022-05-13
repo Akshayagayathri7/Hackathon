@@ -4,13 +4,6 @@
       <div class="layout">
       <router-view />
       </div>
-      <div>
-    <v-img
-      :src="require('./assets/logo.png')"
-      class="my-3"
-      contain
-      height="100"
-    /></div>
     <AppFooter />
   </v-app>
 </template>
@@ -31,7 +24,7 @@ export default {
 <style scoped>
 .layout {
   margin: 16px;
-  display: block;
+  /* display: block; */
 }
 .hero {
   background: url('./assets/background_home.jpg');

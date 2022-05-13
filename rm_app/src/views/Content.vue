@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="col-12">
     <div class="mb-4"><label>{{$t('label')}}</label></div>
     <v-select
       :items="$t('items')"
       item-text="name"
       :label="$t('placeholder')"
       :v-model="$t(`items[${this.selectedLoan.name}]`)"
-      item-color="primary"
+      item-color="purple"
       solo
       return-object
       full-width
@@ -47,7 +47,7 @@
               <v-card-actions>
                 <v-spacer></v-spacer>
                 <v-btn
-                  color="green darken-1"
+                  color="purple lighten-3"
                   text
                   @click="dialog = false"
                 >
@@ -62,7 +62,7 @@
           <v-btn
             depressed
             :disabled="!radioGroup"
-            color="primary"
+            color="purple lighten-3"
             @click="goToSummary"
           >{{ $t("button_submit") }}
           </v-btn>
