@@ -1,6 +1,6 @@
 {
   "message": "hello i18n !!",
-  "app_title": "Relationship Manager",
+  "app_title": "Customized Customer Service ",
   "home_content": "Perfect place to fulfill your banking and investment requirements. We have dedicated relationship managers, who can resolve your inhibitions and show you an ideal way to cater your needs. We come up with the best and the most affordable prices for the service we provide. Get in touch with us anytime and any day to learn more about our services.",
   "card_description": "Description",
   "button_proceed": "Proceed",
@@ -11,19 +11,19 @@
   "items":
     [
       {
-        "name": "Personal Loan",
+        "name": "Loans",
         "value": 0,
         "description": "Personal loans are loans that can cover a number of personal expenses\nYou can find personal loans through banks, credit unions, and online lenders.\nPersonal loans can be secured, meaning you need collateral to borrow money, or unsecured, with no collateral needed.\nPersonal loans can vary greatly when it comes to their interest rates, fees, amounts, and repayment terms",
         "img": "personal_loan"
       },
       {
-        "name":"Property Loan",
+        "name":"Credit/Debit Services",
         "value": 1,
         "description": "any money borrowed from (A) a bank, financial institution, hedge fund, pension fund, or insurance company or (B) any other entity having as its principal business the lending of money and/or investing in loans, in each case other than public or quasi-public entities or international organisations with a public or quasi-public character",
         "img": "home_loan"
       },
       {
-        "name":"Gold Loan",
+        "name":"Investments",
         "value": 2,
         "description": "A Gold loan or loan against gold is a secured credit facility extended by banks and financial institutions, letting you pledge your gold jewellery or ornaments in exchange for funds. Instant Loan Across the Table: You get access to funds, instantly.",
         "img": "gold_loan"
@@ -53,17 +53,17 @@
   "cost":
     [
       {
-        "amount": "20",
+        "amount": "Charges for 15days",
         "text": "Enjoy the support with RM for 15 days",
         "key": 1
       },
       {
-        "amount": "30",
+        "amount": "Charges for 1 month",
         "text": "Enjoy the support with RM for 1 month",
         "key": 2
       },
       {
-        "amount": "50",
+        "amount": "Charges for 3 months",
         "text": "Enjoy the support with RM for 3 months",
         "key": 3
       }

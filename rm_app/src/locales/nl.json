@@ -1,6 +1,6 @@
 {
   "message": "haha",
-  "app_title": "Relatie manager",
+  "app_title": "Aangepaste klantenservice",
   "home_content": "Perfecte plek om aan uw bank- en investeringsbehoeften te voldoen. We hebben toegewijde relatiemanagers die uw remmingen kunnen oplossen en u een ideale manier kunnen laten zien om aan uw behoeften te voldoen. We komen met de beste en de meest betaalbare prijzen voor de service die we bieden. Neem op elk moment en elke dag contact met ons op voor meer informatie over onze diensten.",
   "card_description": "Beschrijving",
   "home_button": "Ga verder om te kiezen voor RM",
@@ -12,19 +12,19 @@
   "items":
     [
       {
-        "name": "Persoonlijke lening",
+        "name": "leningen",
         "value": 0,
         "description": "hlo evng",
         "img": "personal_loan"
       },
       {
-        "name":"Vastgoedlening",
+        "name":"Credit-/debetdiensten",
         "value": 1,
         "description": "hlo evng",
         "img": "home_loan"
       },
       {
-        "name":"Gouden lening",
+        "name":"investeringen",
         "value": 2,
         "description": "hlo evng",
         "img": "gold_loan" 
@@ -54,17 +54,17 @@
   "cost":
     [
       {
-        "amount": "20",
+        "amount": "Kosten voor 15 dagen",
         "text": "Enjoy the support with RM for 15 days",
         "key": 1
       },
       {
-        "amount": "30",
+        "amount": "Kosten voor 1 maand",
         "text": "Enjoy the support with RM for 1 month",
         "key": 2
       },
       {
-        "amount": "50",
+        "amount": "Kosten voor 3 maanden",
         "text": "Enjoy the support with RM for 3 months",
         "key": 3
       }
