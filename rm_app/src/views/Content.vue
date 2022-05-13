@@ -20,7 +20,7 @@
           />
         </div>
         <div class="col-md-6 sm-12">
-          <h1 class="mb-4">{{ $t("card_description") }}</h1>
+          <h1 class="mb-4 font-title">{{ $t("card_description") }}</h1>
           <p >
             {{ $t(`items[${this.selectedLoan.value}].description`) }}
           </p>
@@ -31,6 +31,7 @@
               :label="durations.value"
               :value="durations.key"
               @click="dialog = true"
+              color="purple"
             ></v-radio>
           </v-radio-group>          
           <v-dialog
@@ -58,6 +59,7 @@
           </v-dialog>
         </div>
       </v-row>
+      <br />
         <div class="text-align-center">
           <v-btn
             depressed
@@ -96,4 +98,9 @@ export default {
 .text-align-center{
   text-align: center;
 }
+.font-title {
+  font-size: 24px;
+  color:purple;
+  font-style: italic;
+};
 </style>
