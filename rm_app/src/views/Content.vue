@@ -1,4 +1,7 @@
 <template>
+<div>
+<v-row><h1>Please hover on the card to see the services offered by the plan</h1>
+</v-row> 
 <v-row>
 <v-container fluid grid-list-md>
   <v-layout row wrap>
@@ -54,12 +57,13 @@
   </v-layout>
 </v-container>
 </v-row>
+</div>
 </template>
 <script>
 export default {
   methods:{
     proceed(i) {
-      this.$store.commit('updateSelectedItem', i);
+      this.$store.commit('updateSelectedItem', i-1);
       console.log(this.$store.state.selectedItem);
       this.$router.push({name: 'Acknowledgement'});
     }
