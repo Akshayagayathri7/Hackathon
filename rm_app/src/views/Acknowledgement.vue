@@ -20,7 +20,7 @@
           </p>
           <p>
            {{$t('amount_title')}}
-            {{ $t(`card_content[${this.$store.state.selectedItem}].cost`) }}
+            {{ $t(`card_content[${this.$store.state.selectedItem}].cost`) }}<span>&#8364;</span>
           </p>
           <p>
             {{$t('service_title')}}
