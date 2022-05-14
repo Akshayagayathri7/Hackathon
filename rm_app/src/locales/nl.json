@@ -1,12 +1,13 @@
 {
   "message": "haha",
   "app_title": "Aangepaste klantenservice",
-  "home_content": "Perfecte plek om aan uw bank- en investeringsbehoeften te voldoen. We hebben toegewijde relatiemanagers die uw remmingen kunnen oplossen en u een ideale manier kunnen laten zien om aan uw behoeften te voldoen. We komen met de beste en de meest betaalbare prijzen voor de service die we bieden. Neem op elk moment en elke dag contact met ons op voor meer informatie over onze diensten.",
+  "title_tag":"Niet voor winst. Voor mensen. !!!",
+  "home_content": "We zijn toegewijd aan uw behoeften. Via deze relatiebeheerder betrekken, begrijpen en behandelen we uw essentiële zaken in slechts een telefoontje verwijderd. Neem contact met ons op voor de beste reeks oplossingen.",
   "card_description": "Beschrijving",
   "home_button": "Ga verder om te kiezen voor RM",
   "service_text": "Selecteer een dienst om details te bekijken",
-  "button_proceed": "Doorgaan...",
-  "button_submit": "Indienen...",
+  "button_proceed": "Doorgaan",
+  "button_submit": "Indienen",
   "placeholder":"Selecteer een dienst",
   "thankyou_text": "BEDANKT Je bent klaar!! Your message has been recieved and we will becontacting you shortly.",
   "items":
@@ -40,28 +41,28 @@
       [
         {
           "key": 1,
-          "title": "15 days",
+          "title": "15 dagen",
           "services": "3",
           "cost": "20",
-          "services_offered": ["credit", "debit", "check payments"]
+          "services_offered": ["Credit", "debiteren", "Betalingen controleren"]
         },
         {
           "key": 2,
-          "title": "1 month",
-          "services": "6",
+          "title": "1 maand",
+          "services": "4",
           "cost": "30",
-          "services_offered": ["home_loan", "personal_loan", "education_loan", "gol_loan"]
+          "services_offered": ["Hypotheek", "Persoonlijke lening", "studie lening", "Gouden lening"]
         },
         {
           "key": 3,
-          "title": "3 months",
-          "services": "10",
+          "title": "3 maanden",
+          "services": "2",
           "cost": "40",
-          "services_offered": ["Advancements of loan", "Investments"]
+          "services_offered": ["Voorschotten van lening", "investeringen"]
         }
       ],
-  "amount": "Cost of the service",
-  "services": "Number of services offered",
+  "amount": "Kosten van de dienst",
+  "services": "Aantal aangeboden diensten",
   "cost":
     [
       {
@@ -80,5 +81,10 @@
         "key": 3
       }
     ],
-  "label": "Selecteer een dienst om details te bekijken"
+  "content_title":"Plaats de muisaanwijzer op de kaart om de services te zien die door het abonnement worden aangeboden",
+  "thanks_title": "Bedankt voor het kiezen",
+  "Summary_title": "Samenvatting:",
+  "plan_title": "Het door jou gekozen plan:",
+  "amount_title": "Bedrag in rekening gebracht:",
+  "service_title": "Aantal geleverde diensten:"
 }

@@ -1,7 +1,8 @@
 {
   "message": "hello i18n !!",
   "app_title": "Customized Customer Service ",
-  "home_content": "Perfect place to fulfill your banking and investment requirements. We have dedicated relationship managers, who can resolve your inhibitions and show you an ideal way to cater your needs. We come up with the best and the most affordable prices for the service we provide. Get in touch with us anytime and any day to learn more about our services.",
+  "title_tag":"Not for Profit. For People. !!!",
+  "home_content": "We are committed to your needs. Through this relationship manager, we engage, understand, and address your essential in just a phone call away. Contact us for the best set of solutions.",
   "card_description": "Description",
   "button_proceed": "Proceed",
   "home_button": "Proceed To Opt for RM",
@@ -42,19 +43,20 @@
         "title": "15 days",
         "services": "3",
         "cost": "20",
-        "services_offered": ["credit", "debit", "check payments"]
+        "services_offered": ["Credit", "Debit", "Check Payments"],
+        "image": "thank_you.jpg"
       },
       {
         "key": 2,
         "title": "1 month",
-        "services": "6",
+        "services": "4",
         "cost": "30",
-        "services_offered": ["home_loan", "personal_loan", "education_loan", "gol_loan"]
+        "services_offered": ["Home loan", "Personal loan", "Education loan", "Gold loan"]
       },
       {
         "key": 3,
         "title": "3 months",
-        "services": "10",
+        "services": "2",
         "cost": "40",
         "services_offered": ["Advancements of loan", "Investments"]
       }
@@ -79,5 +81,10 @@
         "key": 3
       }
     ],
-  "label": "Please select a service to view details"
+  "content_title": "Please hover on the card to see the services offered by the plan",
+  "thanks_title": "Thank you for opting",
+  "Summary_title": "Summary:",
+  "plan_title": "The plan chosen by you:",
+  "amount_title": "Amount charged:",
+  "service_title": "No.of services provided:"
 }

@@ -1,17 +1,13 @@
 <template>
   <div class="align-self-center">
-    <HomePage/>
+    <HomePage />
     <br />
     <br />
     <br />
-    <div class="align-center">
-    <v-btn
-      @click="goToSelection"
-      depressed
-      color="purple lighten-3"
-    >
-    {{ $t("home_button") }}
-    </v-btn>
+    <div class="align-center" style="font-family: emoji">
+      <v-btn @click="goToSelection" depressed color="purple lighten-3">
+        {{ $t("home_button") }}
+      </v-btn>
     </div>
   </div>
 </template>
@@ -27,9 +23,9 @@ export default {
   },
   methods: {
     goToSelection() {
-      this.$router.push({name: 'Content'});
-    }
-  }
+      this.$router.push({ name: "Content" });
+    },
+  },
 };
 </script>
 <style scoped>
